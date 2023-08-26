@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Giraffitii Hub</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <style>
+    body {
+  background-color: #006d98;
+  overflow: auto;
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+    #main {
+      width: 80%;
+      margin: auto;
+      padding: 20px;
+    }
+
+    #profile-pic {
+      display: block;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+      border-radius: 50%;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #fff700;
+      font-size: 1.5em;
+    }
+
+    #youtube {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    iframe {
+      width: 680px;
+      height: 380px;
+    }
+
+    #links {
+      text-align: center;
+    }
+
+    a {
+      display: block;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f4f820;
+      color: #006d98;
+      text-decoration: none;
+      border-radius: 45px;
+      width: 50%;
+      text-align: center;
+      transition: transform 0.3s;
+      overflow: hidden;
+      font-size: 25px;
+    }
+
+    a:hover {
+      background-color: #e4e810;
+      transform: scale(1.5);
+    }
+
+    #social-links {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .social-link {
+      display: inline-block;
+      margin: 10px;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: #006d98;
+      text-decoration: none;
+      text-align: center;
+      line-height: 70px;
+      font-size: 30px;
+      color: #fff700;
+      transition: background-color 0.3s;
+      border: 2px solid #fff700;
+    }
+
+    .social-link:hover {
+      background-color: #fff700;
+      color: #006d98;
+    }
+
+    #background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.5;
+      animation: circleAnimation 6s infinite;
+    }
+
+    .small {
+      width: 30px;
+      height: 30px;
+    }
+
+    .medium {
+      width: 50px;
+      height: 50px;
+    }
+
+    .large {
+      width: 70px;
+      height: 70px;
+    }
+
+    .yellow {
+      background-color: #f4f820;
+    }
+
+    .blue {
+      background-color: #006d98;
+    }
+
+    .teal {
+      background-color: #00B7ff;
+    }
+
+    .orange {
+      background-color: #FfC300;
+    }
+
+    @keyframes circleAnimation {
+      0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="background"></div>
+  <div id="main">
+    <img id="profile-pic" src="https://cdn.discordapp.com/attachments/1077542460353421372/1111311810189082705/Ned__Giraffitii_a_girl_laughing_in_the_camera_wearing_a_hat_sho_129694d7-b54d-4527-ad42-aed0d48d6ddd_ins.jpg" alt="Profile Picture">
+    <h1>Game Designer | Artist since '17 | NFT & Web3 Educator | Podcast Host</h1>
+    <div id="youtube">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/SkvjfYl-af4" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div id="links">
+      <a href="#" data-url="https://www.youtube.com/watch?v=8R1hUnPWgFk&feature=youtu.be">
+        <i class="fab fa-youtube"></i> YouTube
+      </a>
+      <br>
+      <a href="#" data-url="https://www.youtube.com/playlist?list=PLRzr83zD30E4bju3rbs-_argsH8rhlNF0">
+        <i class="fab fa-youtube"></i> Circle of Trust Podcast
+      </a>
+      <br>
+      <a href="#" data-url="https://foundation.app/@Giraffitii">
+      🎨 Foundation 
+</a>
+      </a>
+      <br>
+      <a href="https://nedzzone.substack.com/?utm_source=substack&utm_medium=web&utm_campaign=substack_profile" target="_blank">
+        <i class="fas fa-newspaper"></i> Substack Newsletter
+      </a>
+      <br>
+    </div>
+    <div id="social-links">
+      <a href="https://twitter.com/Giraffitii_NFT" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/nedshoaei/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/giraffitii/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.behance.net/nedashoaei" target="_blank" class="social-link"><i class="fab fa-behance"></i></a>
+    </div>
+  </div>
+
+  <script>
+    function createCircle() {
+  const circle = document.createElement('div');
+  const sizes = ['small', 'medium', 'large'];
+  const colors = ['yellow', 'blue', 'teal', 'orange', 'pink', 'purple'];
+  const randomSize = sizes[Math.floor(Math.random() * sizes.length)];
+  const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+  circle.classList.add('circle', randomSize, randomColor);
+  circle.style.left = Math.random() * window.innerWidth + 'px';
+  circle.style.top = Math.random() * window.innerHeight + 'px';
+  circle.style.opacity = Math.random() * 0.5 + 0.1; // Adjust opacity between 0.1 and 0.6
+
+  document.getElementById('background').appendChild(circle);
+}
+
+// Immediately create the first circle
+createCircle();
+
+// Set interval to create circles every 3 seconds
+setInterval(createCircle, 3000); // Adjust the interval to control the speed of circle appearance (e.g., every 3 seconds)

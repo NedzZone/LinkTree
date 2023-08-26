@@ -1,0 +1,92 @@
+body {
+  background-color: #006d98;
+  font-family: 'Times New Roman', cursive, sans-serif;
+  color: #f4f820;
+}
+
+#main {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+#profile-pic {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #f4f820;
+  font-size: 2em;
+}
+
+#youtube {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+iframe {
+  width: 680px;
+  height: 380px;
+}
+
+#links {
+  text-align: center;
+}
+
+a {
+  display: block;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f820;
+  color: #006d98;
+  text-decoration: none;
+  border-radius: 45px;
+  width: 50%;
+  text-align: center;
+  transition: transform 0.3s;
+  overflow: hidden;
+  font-size: 25px;
+}
+
+a:hover {
+  background-color: #e4e810;
+  transform: scale(1.5);
+}
+
+#social-links {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#social-links {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.social-link {
+  display: inline-block;
+  margin: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #006d98;
+  text-decoration: none;
+  text-align: center;
+  line-height: 70px;
+  font-size: 30px;
+  color: #fff700;
+  transition: background-color 0.3s;
+  border: 2px solid #fff700;
+}
+
+.social-link:hover {
+  background-color: #fff700;
+  color: #006d98;
+}
+
